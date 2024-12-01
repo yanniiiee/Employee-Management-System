@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.lang.String?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.employeemanagementsystem.HelloController" spacing="10" alignment="TOP_CENTER">
+    <TableView fx:id="tableView" prefWidth="600" prefHeight="200">
+        <columns>
+            <TableColumn text="Name" fx:id="nameColumn" />
+            <TableColumn text="Type" fx:id="typeColumn" />
+            <TableColumn text="Salary" fx:id="salaryColumn" />
+        </columns>
+    </TableView>
+
+    <TextField fx:id="nameField" promptText="Name" />
+    <ComboBox fx:id="typeDropdown" promptText="Select Type">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="FullTime" />
+                <String fx:value="PartTime" />
+                <String fx:value="Contractor" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <TextField fx:id="salaryField" promptText="Salary / Hourly Rate" />
+    <TextField fx:id="hoursField" promptText="Hours Worked / Max Hours" />
+    <Button text="Add Employee" onAction="#addEmployee" />
+    <Button text="Remove Employee" onAction="#removeEmployee" />
+
+</VBox>
