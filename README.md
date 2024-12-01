@@ -72,7 +72,8 @@ The project consists of the following components:
 
 ### Example with Employees Added
 
-![Employee List](https://github.com/user-attachments/assets/a1280506-2bdc-4b33-a2c8-e193851c3e8d)
+![Employee List](https://github.com/user-attachments/assets/35b628c0-1b37-4775-a2ad-2863e3c30cb8)
+
 
 ## Example Input
 
